@@ -31,6 +31,7 @@
     </style>
 </head>
 <body>
+
 <!-- Container Principal -->
     <div class="container-md">
        <header>
@@ -39,12 +40,15 @@
   <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
 </svg> </h2>
        </header>
+
 <!-- Formulário -->
 
 <form id="caixa-form">
+
+  <!-- Blocos Principais -->
    
   <div class="mb-3">
-    <label for="inputYourName" class="form-label"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+    <label for="inputYourName" class="form-label"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
 </svg> Nome </label>
     <input class="form-control" type="text" placeholder=" Nome completo." aria-label="default input example" required>
@@ -65,7 +69,7 @@
 </svg> Senha  </label>
     <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Digite uma senha." required>
     <div id="passwordHelpBlock" class="form-text">
-       Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais.
+       Sua senha deve ter de 8 a 15 caracteres, conter letras e números e não deve conter espaços, caracteres especiais.
     </div>
   </div>
 
@@ -76,14 +80,16 @@
     <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Confirme a sua senha." required>
   </div>
 
+<!-- Final dos Blocos Principais e Início da aba de Países e Interesses-->
+
   <div class="mb-3">
       <label for="disabledSelect" class="form-label"> País  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
   <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
 </svg> </label>
       <select id="disabledSelect" class="form-select">
-        <option> Brasil </option>
-        <option> Portugal </option>
-        <option> Outro </option>
+        <option value="BR"> Brasil </option>
+        <option value="PT"> Portugal </option>
+        <option value="OTHER"> Outro </option>
       </select>
   </div>
 
